@@ -1,4 +1,4 @@
-import { Suspense, use } from 'react';
+import { Suspense } from 'react';
 import './App.css'
 import Countries from './Countries/Countries';
 
@@ -16,7 +16,6 @@ function App() {
       <Suspense fallback={<h3>Countries Coming...</h3>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
-      <h3>Hello World</h3>
     </>
   )
 }

@@ -20,10 +20,10 @@ const Country = ({country, handleVisitedCountries,handleVisitedFlags}) => {
         <div className={`countryCard ${visited && 'country-visited'}`}>
             <h3>Country Name: {country.name.common}</h3>
             <h3>Capital: {country.capital}</h3>
-            <h3>official: {country.name.official}</h3>
+            <h3>Official Name: {country.name.official}</h3>
             <img src={country.flags.png} alt="" />
             <br />
-            <button onClick={handleVisited}>
+        <button onClick={handleVisited} style={{margin:"10px"}}>
                 {visited? 'Visited' : 'Not Visited'}
             </button>
 
